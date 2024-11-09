@@ -2,7 +2,6 @@
 "use client";
 import Breadcrumb  from "../../components/ux/breadcrumb"
 import {Header, Footer} from '../../components/ux/nav'
-import { Analytics } from "@vercel/analytics/react"
 import './styles/global.css'
 
 export default function RootLayout({
@@ -18,7 +17,6 @@ export default function RootLayout({
             <Breadcrumb/>
             {children}
           </div>
-          <Analytics />
         <Footer/>
       </body>
     </html>
