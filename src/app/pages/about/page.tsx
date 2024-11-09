@@ -67,8 +67,14 @@ export default function About() {
     </div>
   );
 }
+interface ProjectCardProps {
+  title: string;
+  description: string;
+  npxCommand: string;
+  repoLink: string;
+}
 
-function ProjectCard({ title, description, npxCommand, repoLink }) {
+function ProjectCard({ title, description, npxCommand, repoLink }: ProjectCardProps) {
   return (
     <div className="border-4 border-gray-900 p-3 max-w-xs bg-black gap-5 border-2 border-white text-white shadow-xl p-8 rounded-lg transition-transform hover:-translate-y-2 hover:shadow-2xl">
       <h3 className="text-2xl font-bold mb-4 border-b-2 border-white pb-2">{title}</h3>
