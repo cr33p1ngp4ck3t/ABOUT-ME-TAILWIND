@@ -4,7 +4,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import { fetchCountries, Country } from '../../../../lib/countryapi';
 
-export default function CountryPage({ params }: { params: { country: string } }) {
+export default function CountryPage() {
   const [countries, setCountries] = useState<Country[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedLetter, setSelectedLetter] = useState<string | null>(null);
