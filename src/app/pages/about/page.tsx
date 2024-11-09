@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 import React from "react";
-import HeroSection from "../../../../components/ux/headline";
 import Link from "next/link";
 import { copyToClipboard } from "../../../../components/ux/copy";
 import '../../styles/global.css'
@@ -24,7 +23,6 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center justify-between p-10 gap-8">
         <div>
           <h1 className="text-5xl font-bold mb-4">Hi! I am Anas Khan</h1>
-          <HeroSection />
         </div>
         <img
           alt="Profile"
