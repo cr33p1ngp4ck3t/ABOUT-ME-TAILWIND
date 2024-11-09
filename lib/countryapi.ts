@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import axios from 'axios';
 
-export interface Country {
+export type Country = {
   name: string;
   population: number;
   capital: string;
